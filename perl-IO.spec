@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-IO - load various IO perl modules
+IO - load various IO perl modules.
 
 %description -l pl
-Modu³y perla IO
+Modu³y perla IO.
 
 %prep
 %setup -q -n IO-%{version}

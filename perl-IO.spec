@@ -3,7 +3,7 @@ Summary:	IO - load various IO perl modules
 Summary(pl):	Modu³ perla IO
 Name:		perl-IO
 Version:	1.20
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/IO/IO-%{version}.tar.gz

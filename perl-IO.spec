@@ -6,7 +6,7 @@ Version:	1.20
 Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/IO/IO-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/IO/IO-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch

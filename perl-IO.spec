@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	IO
 %define		pdir	IO
-Summary:	IO::MUX - an IO stream multiplexing module
-Summary(pl):	IO::MUX - modu³ multipleksera dla strumieni we/wy
+Summary:	IO - the perl5 IO distribution
+Summary(pl):	IO - modu³y dystrybucyjne IO perla 5
 Name:		perl-IO
 Version:	1.23_01
 %define		ver	%(echo %{version} | tr -d _)
@@ -22,8 +22,10 @@ Requires:	perl-dirs >= 1.0-6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+This is the perl5 IO distribution.
 
 %description -l pl
+S± to modu³y dystrybucyjne IO perla 5.
 
 %prep
 %setup -q -n %{pnam}-%{ver}

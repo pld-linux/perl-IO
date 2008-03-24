@@ -14,8 +14,9 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{ver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/IO/%{pnam}-%{ver}.tar.gz
 # Source0-md5:	4f209b75851b27f39a4d221d01a19b92
+URL:		http://search.cpan.org/dist/IO/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-dirs >= 1.0-6

@@ -10,7 +10,7 @@ Summary(pl.UTF-8):	IO - moduły dystrybucyjne IO perla 5
 Name:		perl-IO
 Version:	1.23_01
 %define		ver	%(echo %{version} | tr -d _)
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl

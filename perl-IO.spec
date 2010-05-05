@@ -5,17 +5,18 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	IO
 %define		pdir	IO
-Summary:	IO - the perl5 IO distribution
+# NOTE: keep this ver macro and use 1.23_01 not 1.2301 as rpm version to avoid epoch bumps
+%define		ver	%(echo %{version} | tr -d _)
+Summary:	IO - Perl core IO modules
 Summary(pl.UTF-8):	IO - moduły dystrybucyjne IO perla 5
 Name:		perl-IO
-Version:	1.23_01
-%define		ver	%(echo %{version} | tr -d _)
-Release:	3
+Version:	1.25
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/IO/%{pnam}-%{ver}.tar.gz
-# Source0-md5:	4f209b75851b27f39a4d221d01a19b92
+# Source0-md5:	b88aaf2bb7437725b11e9eb48dfb6c93
 URL:		http://search.cpan.org/dist/IO/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -23,7 +24,7 @@ Requires:	perl-dirs >= 1.0-6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is the perl5 IO distribution.
+Perl core IO modules.
 
 %description -l pl.UTF-8
 Są to moduły dystrybucyjne IO perla 5.
@@ -45,6 +46,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm $RPM_BUILD_ROOT%{perl_vendorarch}/auto/IO/.packlist
 
 %clean
 rm -rf $RPM_BUILD_ROOT

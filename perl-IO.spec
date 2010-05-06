@@ -15,7 +15,8 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/IO/%{pnam}-%{ver}.tar.gz
+#Source0:	http://www.cpan.org/modules/by-module/IO/%{pnam}-%{ver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/IO-%{version}.tar.gz
 # Source0-md5:	b88aaf2bb7437725b11e9eb48dfb6c93
 URL:		http://search.cpan.org/dist/IO/
 BuildRequires:	perl-devel >= 1:5.8.0

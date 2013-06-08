@@ -11,7 +11,7 @@ Summary:	IO - Perl core IO modules
 Summary(pl.UTF-8):	IO - podstawowe moduły IO Perla
 Name:		perl-IO
 Version:	1.25
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl

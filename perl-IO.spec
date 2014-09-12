@@ -58,6 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/IO.pm
 %{perl_vendorarch}/IO/*.pm
 %{perl_vendorarch}/IO/Socket
-%{perl_vendorarch}/auto/IO/IO.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/IO/IO.so
 %{_mandir}/man3/IO*.3pm*

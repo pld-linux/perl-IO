@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pnam	IO
 %define		pdir	IO
 # NOTE: keep this ver macro and use 1.23_01 not 1.2301 as rpm version to avoid epoch bumps
